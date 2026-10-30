@@ -1,0 +1,219 @@
+TEMA 1: Sistemas Informáticos
+
+Conceptos básicos:
+Sistema informático: conjunto de recursos hardware, software y recursos humanos que trabajan de forma coordinada para procesar, almacenar y transmitir información.
+
+- Hardware: partes físicas y tangibles que permiten al software hacer sus tareas (ordenador, monitor, móvil, impresora, teclado...). Se divide en componentes internos, periféricos de entrada, periféricos de salida y periféricos de entrada/salida.
+- Software: soporte lógico que hace posible que el hardware realice una tarea específica. Son los programas (sistemas operativos como Windows, aplicaciones como Chrome y firmware como la BIOS).
+- Recursos humanos: personal relacionado con el sistema, tanto los usuarios que lo utilizan como los que lo crean y mantienen (programadores, analistas, etc.).
+
+Diferencia entre programa, proceso y datos:
+- Programa: conjunto de instrucciones almacenadas en el disco duro (ej. Firefox instalado en el PC).
+- Instrucciones: son las órdenes que componen el programa e indican al ordenador qué debe hacer.
+- Proceso: es un programa ejecutándose en ese momento.
+- Datos: es la información que utiliza el programa mientras se ejecuta (ej. páginas web abiertas, direcciones visitadas o datos temporales).
+
+Licencias de software:
+Es el contrato entre el desarrollador de un programa y el usuario que lo quiere usar.
+- Software propietario: sistemas operativos como Windows o macOS, y aplicaciones como Photoshop, Safari o Adobe Acrobat.
+- Software libre: sistemas operativos como Linux (Debian, Ubuntu) y aplicaciones como GIMP, LibreOffice o VLC.
+
+Otros sistemas operativos:
+- Android: basado en Linux y propiedad de Google. Es el más usado en móviles, pero también está en tablets, teles y coches.
+- iOS: competidor de Android en móviles (iPhone y iPad). Creado por Apple, no permite instalarse en dispositivos de otras marcas y está cerrado a su ecosistema.
+- Chrome OS: versión privativa basada en Chromium OS que viene en los Chromebooks. Usa el navegador Google Chrome como interfaz principal y ejecuta aplicaciones web.
+
+Tipos de interfaz de usuario:
+- CLI (Interfaz de línea de comandos): escribir órdenes con texto (ej. MS-DOS, terminal de Linux, CMD).
+- GUI (Interfaz gráfica): ventanas, iconos y menús que facilitan el uso con el ratón.
+
+
+Martes 29 de septiembre de 2026
+Historia de los Sistemas Operativos (Hitos importantes):
+
+- Años 50 (Procesamiento por lotes): los trabajos se ejecutan por tandas, casi sin interacción directa del usuario.
+- 1969 (UNIX): sistema multiusuario y multitarea. Tuvo gran influencia en todos los sistemas posteriores.
+- 1981 (MS-DOS): Microsoft Disk Operating System. Interfaz de línea de comandos (CLI) y monotarea. Muy asociado a los primeros PCs personales.
+- 1985 (Windows 1.0): primer entorno gráfico (GUI) que se ejecutaba sobre MS-DOS (todavía no era un SO independiente como el actual).
+- 1990-1992 (Windows 3.x): la interfaz gráfica gana popularidad para ejecutar aplicaciones en ventanas.
+- 1991 (Linux): Linus Torvalds anuncia el proyecto y publica la versión 0.01 del kernel (núcleo), naciendo una gran familia de sistemas libres.
+- 1993 (Windows NT 3.1): nueva familia empresarial de Microsoft con arquitectura de 32 bits y multitarea protegida.
+- 1993-1994 (Debian y Red Hat / Linux 1.0): sale la primera versión estable 1.0 del kernel de Linux y aparecen las distribuciones, que empaquetan el kernel con herramientas y programas.
+- 1995 (Windows 95): escritorio popular renovado que acercó la multitarea apropiativa de 32 bits a los usuarios domésticos.
+- 2001 (Windows XP): unifica por fin la línea doméstica con la base sólida de Windows NT.
+- 2004 (Ubuntu): distribución que ayuda a popularizar Linux en ordenadores de escritorio.
+- 2007-2008 (iOS y Android): llegada de los sistemas móviles modernos adaptados a pantallas táctiles (iPhone OS en 2007 y Android en 2008).
+
+Ideas clave de la historia:
+- Monotarea: solo puede ejecutar un programa a la vez (como MS-DOS).
+- Multitarea: varios procesos alternan el uso de la CPU. No nació con Windows 95, UNIX ya la tenía décadas antes, pero Windows 95 la llevó a las casas.
+- Precisión importante: Linux es solo el kernel (el núcleo), mientras que una distribución (como Ubuntu o Debian) es el kernel acompañado de herramientas y programas.
+- Sin sistema operativo las aplicaciones no podrían gestionar de forma cómoda ni segura el hardware, los archivos, la memoria ni los dispositivos.
+
+
+Jueves 01 Octubre 2026
+1.1. Sistemas de numeración
+
+- Definición:
+Sistema de numeración es un conjunto de reglas, símbolos y convenios que permiten representar todos los números válidos. Para que el equipo entienda la información, hay que relacionar los datos con sus dos estados básicos: encendido (1) y apagado (0).
+
+- Tipos:
+Posicionales: 00001 €, 10000 € (el valor depende de la posición)
+No Posicionales: ||||| |||||
+
+Bases principales:
+Dec. (Base 10): {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+Bin. (Base 2): {0, 1}
+Octal (Base 8): {0, 1, 2, 3, 4, 5, 6, 7}
+Hex. (Base 16): {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F} (donde A=10, B=11, C=12, D=13, E=14, F=15)
+
+Potencias de 2 (como en el juego 2048):
+1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024...
+
+Cómo convertir entre bases:
+1) De Binario a Decimal: se ponen las potencias de 2 debajo de cada dígito empezando por la derecha (1, 2, 4, 8, 16, 32, 64, 128...) y se suman solo las que tienen un 1.
+Ejemplos:
+01000100 -> Decimal -> 128(0) 64(1) 32(0) 16(0) 8(0) 4(1) 2(0) 1(0) -> 64 + 4 = 68
+10100001 -> 128(1) 64(0) 32(1) 16(0) 8(0) 4(0) 2(0) 1(1) -> 128 + 32 + 1 = 161
+
+2) De Decimal a Binario:
+- Método clásico: ir dividiendo el número entre 2 sucesivamente y coger el último cociente y todos los restos en orden inverso (de abajo a arriba).
+- Método rápido (jugando con potencias): ir restando al número la potencia de 2 más grande que quepa, poniendo un 1 en las potencias que usamos y un 0 en las que no.
+Ejemplo:
+572 -> 512(1) 256(0) 128(0) 64(0) 32(1) 16(1) 8(1) 4(1) 2(0) 1(0) -> 1000111100 (porque 512 + 32 + 16 + 8 + 4 = 572)
+
+3) De Binario a Octal y Hexadecimal:
+- A Octal: se agrupan los bits de 3 en 3 de derecha a izquierda (completando con ceros al principio si falta) y se pasa cada grupo a su valor del 0 al 7.
+- A Hexadecimal: se agrupan los bits de 4 en 4 de derecha a izquierda y se cambia cada bloque de 4 bits por su número o letra en hexadecimal.
+
+
+Jueves 8 Oct.
+Tabla de equivalencias:
+
+DECIMAL {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+00, 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
+
+CUATERNARIO {0, 1, 2, 3}
+00, 01, 02, 03, 10, 11, 12, 13, 20, 21, 22, 23, 30, 31, 32, 33, 100, 101, 102, 103, 110, 111, 112, 113, 120
+
+HEXADECIMAL {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F}
+00, 01, 02, 03, 04, 05, 06, 07, 08, 09, 0A, 0B, 0C, 0D, 0E, 0F, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 1A, 1B, 1C, 1D, 1E, 1F, 20
+
+Otros tipos de datos (cómo se guardan en digital):
+- Texto: se usa la tabla ASCII para asignar un número a cada letra o símbolo.
+- Sonido: el sonido analógico (onda continua) pasa por muestreo y luego cuantificación (se convierte en una lista de números).
+- Imagen: la imagen original pasa por muestreo (se divide en píxeles) y cuantificación (una matriz de valores numéricos de color).
+- Vídeo: es una sucesión de imágenes (fotogramas por segundo) junto con el audio.
+
+
+Unidades de medida de la información (Repaso 22 oct):
+- Bit: unidad mínima de información (solo puede ser 0 o 1).
+- Byte (B): conjunto de 8 bits (por ejemplo, una letra ocupa 1 Byte).
+- Kilobyte (KB): 1024 Bytes.
+- Megabyte (MB): 1024 KB.
+- Gigabyte (GB): 1024 MB.
+- Terabyte (TB): 1024 GB.
+- Petabyte (PB): 1024 TB.
+- Exabyte (EB): 1024 PB.
+- Zettabyte (ZB): 1024 EB.
+
+
+Viernes 9 y Martes 13 de octubre de 2026
+1.2. Archivos y directorios
+
+Definiciones:
+- Archivo (o fichero): elemento que almacena información, como un texto, una imagen, un vídeo o un programa.
+- Directorio (o carpeta): contenedor que permite organizar y agrupar archivos y otros directorios dentro del sistema de archivos.
+
+Atributos de los archivos:
+- Nombre: suele describir lo que tiene dentro, pero no es obligatorio.
+- Tipo: texto, audio, vídeo, binario, comprimido... En Windows las extensiones van ligadas al tipo (ej. .jpg, .txt).
+- Tamaño: espacio que ocupa en el disco duro (almacenamiento secundario).
+- Localización: la ruta donde está guardado el archivo.
+- Permisos: derechos de acceso que tienen los distintos usuarios sobre él.
+- Fechas: de creación, de último acceso o de modificación.
+
+Diagrama Jerarquía directorios de Windows (Árbol Invertido Esquema)
+Raíz en Windows: C:\
+Raíz en Linux: /
+
+Niveles:
+1 -> C:\
+2 -> Users, Windows, Program Files...
+3 -> Profe
+4 -> Desktop
+
+Un árbol invertido es: Un modelo de organización de datos en el que los elementos se estructuran de forma ramificada descendente, ubicando la raíz en la parte superior.
+
+EJERCICIO (Estructura de carpetas en Windows):
+C:\
+  - Users
+      - profe
+          - desktop
+      - user
+  - Windows
+
+Comandos básicos de Windows (CMD):
+- DIR (de Directory): muestra el contenido de la carpeta en la que estamos.
+- CD (de Change Directory): sirve para cambiar de directorio indicando la ruta a donde queremos ir (ej. cd Users).
+- CD .. : sirve para subir un nivel, es decir, volver a la carpeta "padre".
+- CLS (de Clear/Clean Screen): limpia toda la pantalla de la consola.
+
+
+Viernes 16 de octubre de 2026
+Comandos y Directorios de Linux:
+
+Comandos de terminal en Linux (CLI):
+- ls -l (de list): equivale al DIR de Windows. Lista el contenido del directorio, y el "-l" hace que se muestre en formato de lista vertical con todos los detalles.
+- cd (de change directory): igual que en Windows, para entrar o salir de carpetas (cd .. para subir al padre).
+- pwd (de print work directory): comando fundamental en Linux que nos imprime por pantalla la ruta del directorio exacto donde nos encontramos.
+- clear: equivale a CLS de Windows, limpia la pantalla de la terminal.
+- whoami: nos dice con qué nombre de usuario estamos conectados.
+
+Directorios dentro de la raíz (/) de Linux:
+bin: contiene comandos básicos y esenciales del sistema (como ls, cp, cat).
+dev: archivos que permiten al sistema operativo comunicarse con dispositivos físicos y virtuales (discos, terminales...).
+etc: guarda los archivos de configuración del sistema y de los programas (usuarios, red, servicios...).
+home: guarda las carpetas personales de los usuarios del sistema (documentos, descargas...).
+lib: bibliotecas compartidas y componentes o módulos del kernel esenciales que necesitan los programas.
+lost+found: guarda fragmentos de archivos rescatados por herramientas de comprobación cuando el sistema se apaga mal.
+mnt: se usa como punto de montaje temporal para discos duros o particiones.
+media: punto de montaje habitual para dispositivos extraíbles como memorias USB.
+opt: almacena programas y software adicional de terceros instalado fuera de los paquetes habituales.
+proc: sistema de archivos virtual con información sobre los procesos y el kernel.
+root: carpeta personal del superusuario (administrador root).
+run: datos temporales del sistema en ejecución (procesos actuales, sockets...).
+sbin: System binaries. Comandos esenciales de administración del sistema.
+sys: sistema de archivos virtual con información y control del hardware y dispositivos del kernel.
+usr: Unix System Resources. Donde está la mayoría de programas, bibliotecas y recursos instalados.
+var: contiene datos que cambian durante el funcionamiento del sistema (registros/logs, cachés, colas).
+boot: archivos de arranque del sistema (como el kernel y el gestor de arranque).
+tmp: archivos temporales que pueden borrarse automáticamente.
+
+Viernes 23 de octubre de 2026
+Arquitectura VON Neumann
+
+Definición de ordenador según Von Neumann (1945):
+Básicamente un ordenador es una CPU que ejecuta instrucciones secuencialmente sobre datos que lee y escribe de la memoria principal.
+
+1. Funcionamiento general:
+Las instrucciones son secuencias de números en binario los cuales el PC interpreta. Cada instrucción tiene un código predefinido. Von Neumann, en 1945 propuso una arquitectura que se sigue usando hoy en día basada en 3 elementos principales conectados por buses: CPU, Memoria Principal y Unidad de Entrada/Salida (E/S).
+- La CPU (Control Process Unit / UCP) se divide en: ALU, Unidad de Control (UC), Contador de programa (PC) y Registros.
+- El bus es un sistema de comunicación (conjunto de líneas para transmitir datos, hay 3 tipos: de datos, de direcciones y de control) que transfiere información entre la CPU, la RAM y la E/S.
+- La Memoria Principal (RAM) almacena los datos y las instrucciones que luego envía a la CPU.
+- La Unidad de Entrada/Salida (E/S) es la interfaz que comunica el ordenador con el exterior (los periféricos).
+
+2. Paso a paso al encender el PC:
+Los componentes de la arquitectura de Von Neumann son: CPU, Registros (campos de memoria muy pequeños y rápidos de 32 o 64 bits), ALU, Unidad de control, Memoria y Sistemas entrada/salida.
+Al encenderse el PC, la CPU tiene una unidad de control (encargada del ciclo de instrucción), que manda señales por un bus a la memoria, y la memoria le devuelve una dirección y los datos. Luego, a través del bus, los datos llegan a la unidad de control. El registro de entrada recoge los datos y se envía a un registro acumulador para operar con ellos en la ALU. Y así se va repitiendo secuencialmente ayudándose del contador de programa (PC), que apunta a la siguiente instrucción que toca ejecutar.
+
+Conceptos clave de la CPU y Memoria:
+- Unidad Aritmético-lógica (ALU): es como la calculadora del procesador.
+  A -> Aritmético: +, -, x, /
+  L -> Lógica: NO! (NOT), OR, AND
+
+- Ciclo de lectura: es el proceso mediante el cual la CPU obtiene un dato o una instrucción de la memoria principal y la guarda en un registro de la CPU.
+
+- Ciclo de escritura: es la fase en la que la CPU almacena en la memoria principal el resultado de una operación que ya ha realizado.
+
+- Ancho de palabra (o tamaño de palabra): de la memoria principal es el número de bits que puede almacenar cada celda de memoria RAM (es clave durante los ciclos de lectura y escritura).
